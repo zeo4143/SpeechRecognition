@@ -1,0 +1,50 @@
+
+
+.container {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.box {
+  width: 50%;
+  box-shadow: -4px 10px 35px -1px rgba(0, 0, 0, 0.75);
+  min-height: 20rem;
+  margin: 2rem;
+  padding: 1.75rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.blinkingMic {
+  animation: zoomInOut 1.05s infinite alternate;
+  display: inline-block;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+  }
+}
